@@ -47,3 +47,18 @@ mutation {
         description
     }
 }
+
+mutation {
+    bookEvent(eventId: "5c5a69555a2ad443794e3031") {
+        _id
+        user {
+            email
+        }
+    }
+}
+
+mutation {
+    cancelEvent(eventId: "5c5a69555a2ad443794e3031") {
+        title
+    }
+}
