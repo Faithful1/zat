@@ -62,3 +62,11 @@ mutation {
         title
     }
 }
+
+query {
+    login(email: "test@test.com", password: "tester") {
+        userId
+        token
+        tokenExpiration
+    }
+}
